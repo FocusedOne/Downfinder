@@ -7,7 +7,7 @@ dogs = open(file)
 
 if '192.168.171.1' in dogs.readline():
     print 'Reading ping times for Benton'
-    
+
 else: print 'Reading ping times for Cabot'
 
 
@@ -35,8 +35,8 @@ for l in pings:
     if 'timeout' in l:
         downtimes.append(l)
         birds +=1
-        
-        
+
+
 
 #downfrom = downtimes[-1]
 #downto = downtimes[1]
@@ -50,6 +50,3 @@ else:
     print 'Pipes unclogged, internet good.'
 
 dogs.close()
-    
-        
-
